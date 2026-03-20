@@ -6,6 +6,10 @@ import motor.motor_asyncio
 from dotenv import load_dotenv
 import os
 
+from services.normalizer import normalize_medications
+from services.validator import validate_medications
+from services.conflict_detection import detect_conflicts
+
 load_dotenv()
 
 MONGODB_URL = os.getenv("MONGODB_URL")
