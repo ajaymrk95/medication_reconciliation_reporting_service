@@ -1,0 +1,9 @@
+
+.env
+
+backend/*
+
+venv/
+ENV/
+bin/
+lib/
