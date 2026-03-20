@@ -7,5 +7,6 @@ venv/
 ENV/
 bin/
 lib/
-
-services/__pycache__
+__pycache__/
+*.pyc
+*.pyo
