@@ -1,0 +1,151 @@
+{
+  "dose_rules": [
+    {
+      "drug_name": "metformin",
+      "min_dose": 500,
+      "max_dose": 1000,
+      "unit": "mg",
+      "note": "Higher doses increase lactic acidosis risk in CKD patients"
+    },
+    {
+      "drug_name": "lisinopril",
+      "min_dose": 5,
+      "max_dose": 40,
+      "unit": "mg",
+      "note": "Doses above 40mg show no additional benefit"
+    },
+    {
+      "drug_name": "atorvastatin",
+      "min_dose": 10,
+      "max_dose": 80,
+      "unit": "mg",
+      "note": "High intensity statin — doses above 80mg increase myopathy risk"
+    },
+    {
+      "drug_name": "warfarin",
+      "min_dose": 1,
+      "max_dose": 10,
+      "unit": "mg",
+      "note": "Narrow therapeutic index — any dose outside range is high risk"
+    },
+    {
+      "drug_name": "aspirin",
+      "min_dose": 75,
+      "max_dose": 325,
+      "unit": "mg",
+      "note": "Below 75mg is subtherapeutic, above 325mg increases GI bleed risk"
+    },
+    {
+      "drug_name": "amlodipine",
+      "min_dose": 2.5,
+      "max_dose": 10,
+      "unit": "mg",
+      "note": "Starting dose 2.5mg for elderly or CKD patients"
+    },
+    {
+      "drug_name": "ramipril",
+      "min_dose": 1.25,
+      "max_dose": 10,
+      "unit": "mg",
+      "note": "Titrated slowly in CKD — monitor potassium and creatinine"
+    },
+    {
+      "drug_name": "simvastatin",
+      "min_dose": 10,
+      "max_dose": 40,
+      "unit": "mg",
+      "note": "40mg is the recommended max — 80mg is only for long-established patients"
+    },
+    {
+      "drug_name": "clopidogrel",
+      "min_dose": 75,
+      "max_dose": 150,
+      "unit": "mg",
+      "note": "150mg used short term post-ACS only"
+    },
+    {
+      "drug_name": "furosemide",
+      "min_dose": 20,
+      "max_dose": 120,
+      "unit": "mg",
+      "note": "High doses in CKD require close monitoring of electrolytes"
+    }
+  ],
+
+  "drug_class_map": {
+    "metformin":     "biguanide",
+    "lisinopril":    "ace_inhibitor",
+    "ramipril":      "ace_inhibitor",
+    "atorvastatin":  "statin",
+    "simvastatin":   "statin",
+    "warfarin":      "anticoagulant",
+    "aspirin":       "antiplatelet",
+    "clopidogrel":   "antiplatelet",
+    "amlodipine":    "calcium_channel_blocker",
+    "furosemide":    "loop_diuretic"
+  },
+
+  "combination_rules": [
+    {
+      "rule_id": "CLASS_001",
+      "type": "class_combination",
+      "classes": ["ace_inhibitor", "ace_inhibitor"],
+      "severity": "high",
+      "reason": "Two ACE inhibitors together cause additive hypotension and acute kidney injury risk — dual ACE inhibitor therapy is contraindicated"
+    },
+    {
+      "rule_id": "CLASS_002",
+      "type": "class_combination",
+      "classes": ["statin", "statin"],
+      "severity": "high",
+      "reason": "Two statins together significantly increase myopathy and rhabdomyolysis risk — only one statin should be prescribed at a time"
+    },
+    {
+      "rule_id": "CLASS_003",
+      "type": "class_combination",
+      "classes": ["antiplatelet", "antiplatelet"],
+      "severity": "medium",
+      "reason": "Dual antiplatelet therapy increases bleeding risk — only indicated post-ACS or post-stent for a defined period"
+    },
+    {
+      "rule_id": "PAIR_001",
+      "type": "drug_pair",
+      "drugs": ["warfarin", "aspirin"],
+      "severity": "high",
+      "reason": "Warfarin and aspirin together significantly increase major bleeding risk including intracranial hemorrhage — requires explicit clinical justification"
+    },
+    {
+      "rule_id": "PAIR_002",
+      "type": "drug_pair",
+      "drugs": ["metformin", "furosemide"],
+      "severity": "medium",
+      "reason": "Furosemide can cause dehydration which increases metformin-associated lactic acidosis risk — especially dangerous in CKD patients"
+    },
+    {
+      "rule_id": "PAIR_003",
+      "type": "drug_pair",
+      "drugs": ["warfarin", "clopidogrel"],
+      "severity": "high",
+      "reason": "Triple therapy risk — warfarin plus clopidogrel dramatically increases bleeding events — requires cardiology or haematology review"
+    },
+    {
+      "rule_id": "PAIR_004",
+      "type": "drug_pair",
+      "drugs": ["lisinopril", "furosemide"],
+      "severity": "medium",
+      "reason": "ACE inhibitor plus loop diuretic can cause first-dose hypotension and acute kidney injury — requires dose adjustment and monitoring"
+    },
+    {
+      "rule_id": "PAIR_005",
+      "type": "drug_pair",
+      "drugs": ["ramipril", "furosemide"],
+      "severity": "medium",
+      "reason": "Same risk as lisinopril plus furosemide — ACE inhibitor and loop diuretic combination requires careful monitoring in CKD"
+    }
+  ],
+
+  "stopped_statuses": [
+    "discontinued",
+    "stopped"
+  ]
+}

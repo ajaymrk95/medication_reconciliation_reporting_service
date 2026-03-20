@@ -1,0 +1,365 @@
+[
+  {
+    "patient_id": "10001",
+    "name": "Arjun Menon",
+    "dob": "1965-03-14",
+    "gender": "male",
+    "clinic_id": "CLN_SUNRISE",
+    "clinic_name": "Sunrise Dialysis & Care Centre",
+    "conditions": ["chronic kidney disease", "type 2 diabetes", "hypertension"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "metformin",    "dose": 500,  "unit": "mg", "status": "active" },
+          { "drug": "lisinopril",   "dose": 10,   "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,   "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-10T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "metformin",    "dose": 1000, "unit": "mg", "status": "active" },
+          { "drug": "lisinopril",   "dose": 10,   "unit": "mg", "status": "active" },
+          { "drug": "warfarin",     "dose": 5,    "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-18T14:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "metformin",    "dose": 500,  "unit": "mg", "status": "active" },
+          { "drug": "warfarin",     "dose": 5,    "unit": "mg", "status": "discontinued" }
+        ],
+        "last_updated": "2026-02-20T10:00:00Z"
+      }
+    },
+    "created_at": "2025-06-01T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10002",
+    "name": "Fatima Begum",
+    "dob": "1978-07-22",
+    "gender": "female",
+    "clinic_id": "CLN_SUNRISE",
+    "clinic_name": "Sunrise Dialysis & Care Centre",
+    "conditions": ["hypertension", "heart failure"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "ramipril",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "amlodipine", "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "furosemide", "dose": 40, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-12T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "lisinopril", "dose": 10, "unit": "mg", "status": "active" },
+          { "drug": "ramipril",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "furosemide", "dose": 40, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-15T11:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "amlodipine", "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "furosemide", "dose": 40, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-17T10:00:00Z"
+      }
+    },
+    "created_at": "2025-07-15T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10003",
+    "name": "Ravi Shankar Pillai",
+    "dob": "1958-11-30",
+    "gender": "male",
+    "clinic_id": "CLN_MALABAR",
+    "clinic_name": "Malabar Kidney & Wellness Clinic",
+    "conditions": ["type 2 diabetes", "atrial fibrillation", "hypertension"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "warfarin",    "dose": 5,   "unit": "mg", "status": "active" },
+          { "drug": "aspirin",     "dose": 75,  "unit": "mg", "status": "active" },
+          { "drug": "metformin",   "dose": 500, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-08T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "warfarin",    "dose": 5,   "unit": "mg", "status": "active" },
+          { "drug": "clopidogrel", "dose": 75,  "unit": "mg", "status": "active" },
+          { "drug": "aspirin",     "dose": 75,  "unit": "mg", "status": "active" },
+          { "drug": "metformin",   "dose": 500, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-14T14:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "warfarin",  "dose": 5,   "unit": "mg", "status": "active" },
+          { "drug": "metformin", "dose": 500, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-16T10:00:00Z"
+      }
+    },
+    "created_at": "2025-08-20T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10004",
+    "name": "Deepa Krishnamurthy",
+    "dob": "1982-05-18",
+    "gender": "female",
+    "clinic_id": "CLN_MALABAR",
+    "clinic_name": "Malabar Kidney & Wellness Clinic",
+    "conditions": ["chronic kidney disease", "hypertension"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "amlodipine",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 40, "unit": "mg", "status": "active" },
+          { "drug": "furosemide",   "dose": 20, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-05T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "amlodipine",   "dose": 10, "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 40, "unit": "mg", "status": "active" },
+          { "drug": "furosemide",   "dose": 20, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-11T14:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "amlodipine",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 40, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-13T10:00:00Z"
+      }
+    },
+    "created_at": "2025-09-10T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10005",
+    "name": "Mohammed Salim",
+    "dob": "1970-01-09",
+    "gender": "male",
+    "clinic_id": "CLN_COASTLINE",
+    "clinic_name": "Coastline Chronic Care & Dialysis",
+    "conditions": ["type 2 diabetes", "chronic kidney disease"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "metformin",    "dose": 1000, "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,   "unit": "mg", "status": "active" },
+          { "drug": "lisinopril",   "dose": 5,    "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-07T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "metformin",    "dose": 1000, "unit": "mg", "status": "active" },
+          { "drug": "simvastatin",  "dose": 20,   "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,   "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-13T11:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "metformin",    "dose": 1000, "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,   "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-15T10:00:00Z"
+      }
+    },
+    "created_at": "2025-10-05T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10006",
+    "name": "Anitha Varghese",
+    "dob": "1955-08-25",
+    "gender": "female",
+    "clinic_id": "CLN_COASTLINE",
+    "clinic_name": "Coastline Chronic Care & Dialysis",
+    "conditions": ["hypertension", "heart failure", "type 2 diabetes"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "furosemide",   "dose": 80,  "unit": "mg", "status": "active" },
+          { "drug": "ramipril",     "dose": 10,  "unit": "mg", "status": "active" },
+          { "drug": "metformin",    "dose": 500, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-06T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "furosemide",   "dose": 40,  "unit": "mg", "status": "active" },
+          { "drug": "ramipril",     "dose": 10,  "unit": "mg", "status": "active" },
+          { "drug": "metformin",    "dose": 500, "unit": "mg", "status": "stopped" }
+        ],
+        "last_updated": "2026-02-10T14:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "furosemide",   "dose": 80,  "unit": "mg", "status": "active" },
+          { "drug": "metformin",    "dose": 500, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-12T10:00:00Z"
+      }
+    },
+    "created_at": "2025-11-01T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10007",
+    "name": "Thomas Kuriakose",
+    "dob": "1963-04-17",
+    "gender": "male",
+    "clinic_id": "CLN_SUNRISE",
+    "clinic_name": "Sunrise Dialysis & Care Centre",
+    "conditions": ["chronic kidney disease", "hypertension"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "lisinopril",   "dose": 20, "unit": "mg", "status": "active" },
+          { "drug": "amlodipine",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 10, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-09T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "lisinopril",   "dose": 20, "unit": "mg", "status": "active" },
+          { "drug": "amlodipine",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 10, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-14T11:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "lisinopril",   "dose": 20, "unit": "mg", "status": "active" },
+          { "drug": "amlodipine",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 10, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-15T10:00:00Z"
+      }
+    },
+    "created_at": "2025-11-20T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10008",
+    "name": "Sreelakshmi Nambiar",
+    "dob": "1990-12-03",
+    "gender": "female",
+    "clinic_id": "CLN_MALABAR",
+    "clinic_name": "Malabar Kidney & Wellness Clinic",
+    "conditions": ["type 2 diabetes", "hypertension"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "metformin",  "dose": 500, "unit": "mg", "status": "active" },
+          { "drug": "ramipril",   "dose": 5,   "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-11T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "metformin",  "dose": 500, "unit": "mg", "status": "active" },
+          { "drug": "ramipril",   "dose": 5,   "unit": "mg", "status": "active" },
+          { "drug": "aspirin",    "dose": 75,  "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-16T14:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "metformin",  "dose": 500, "unit": "mg", "status": "active" },
+          { "drug": "aspirin",    "dose": 75,  "unit": "mg", "status": "discontinued" }
+        ],
+        "last_updated": "2026-02-18T10:00:00Z"
+      }
+    },
+    "created_at": "2025-12-05T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10009",
+    "name": "Biju Paulose",
+    "dob": "1973-09-11",
+    "gender": "male",
+    "clinic_id": "CLN_COASTLINE",
+    "clinic_name": "Coastline Chronic Care & Dialysis",
+    "conditions": ["atrial fibrillation", "hypertension", "chronic kidney disease"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "warfarin",   "dose": 3,  "unit": "mg", "status": "active" },
+          { "drug": "amlodipine", "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "furosemide", "dose": 40, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-13T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "warfarin",   "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "amlodipine", "dose": 5,  "unit": "mg", "status": "active" },
+          { "drug": "furosemide", "dose": 40, "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-17T11:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "warfarin",   "dose": 3,  "unit": "mg", "status": "active" },
+          { "drug": "amlodipine", "dose": 5,  "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-19T10:00:00Z"
+      }
+    },
+    "created_at": "2026-01-10T08:00:00Z"
+  },
+
+  {
+    "patient_id": "10010",
+    "name": "Geetha Subramaniam",
+    "dob": "1961-06-28",
+    "gender": "female",
+    "clinic_id": "CLN_MALABAR",
+    "clinic_name": "Malabar Kidney & Wellness Clinic",
+    "conditions": ["chronic kidney disease", "type 2 diabetes", "heart failure"],
+    "medication_state": {
+      "clinic_emr": {
+        "current": [
+          { "drug": "metformin",    "dose": 500, "unit": "mg", "status": "active" },
+          { "drug": "furosemide",   "dose": 40,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,  "unit": "mg", "status": "active" },
+          { "drug": "lisinopril",   "dose": 10,  "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-14T09:00:00Z"
+      },
+      "hospital_discharge": {
+        "current": [
+          { "drug": "metformin",    "dose": 500, "unit": "mg", "status": "stopped" },
+          { "drug": "furosemide",   "dose": 80,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,  "unit": "mg", "status": "active" },
+          { "drug": "lisinopril",   "dose": 20,  "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-18T14:00:00Z"
+      },
+      "patient_reported": {
+        "current": [
+          { "drug": "metformin",    "dose": 500, "unit": "mg", "status": "active" },
+          { "drug": "furosemide",   "dose": 40,  "unit": "mg", "status": "active" },
+          { "drug": "atorvastatin", "dose": 20,  "unit": "mg", "status": "active" }
+        ],
+        "last_updated": "2026-02-20T10:00:00Z"
+      }
+    },
+    "created_at": "2026-01-20T08:00:00Z"
+  }
+]
