@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import datetime
 
 
-RULES_PATH = Path(__file__).parent / "data" / "conflict_rules.json"
+RULES_PATH = Path(__file__).parent.parent / "data" / "conflict_rules.json"
 
 with open(RULES_PATH) as f:
     RULES = json.load(f)

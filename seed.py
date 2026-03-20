@@ -33,12 +33,6 @@ def fix_id(doc: dict) -> dict:
         doc["_id"] = str(doc["_id"])
     return doc
 
-
-from normalizer import normalize_medications
-from validator import validate_medications
-from conflict_detection import detect_conflicts
-
-
 # ── seed one patient ───────────────────────────────────────────────────────────
 
 async def seed_patient(patient: dict):
