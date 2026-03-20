@@ -46,7 +46,7 @@ medical_reconcilation_reporting_service/
 ### 1. Clone and create virtual environment
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ajaymrk95/medication_reconciliation_reporting_service.git
 cd medical_reconcilation_reporting_service/
 
 python -m venv backend
